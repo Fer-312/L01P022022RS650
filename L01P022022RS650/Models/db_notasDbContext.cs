@@ -7,7 +7,10 @@ namespace L01P022022RS650.Models
         public db_notasDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<L01P022022RS650.Models.facultades> facultades { get; set; } = default!;
+        public DbSet<facultades> facultades { get; set; }
+        public DbSet<materias> materias { get; set; }
+        public DbSet<departamentos> departamentos { get; set; }
+        public DbSet<alumnos> alumnos { get; set; }
 
     }
     
