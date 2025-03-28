@@ -11,6 +11,8 @@ namespace L01P022022RS650.Models
          */
         [Key]
         public int id { get; set; }
+        [StringLength(50, ErrorMessage = "La cantidad  maxima de caracateres valida es {1}")]
+        [Display(Name = "Departamento")]
         public string? departamento { get; set; }
     }
 }
